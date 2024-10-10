@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--styling-->
+    <link href="css/style.css" rel="stylesheet"/>
+    <!--Icon-->
+    <link rel="icon" href="assets/icon1.png"/>
+</head>
+<body>
+    <main>
+        <!--navbar-->
+            <div class="navbar">
+                <div class="container-fluid" style="height: 4rem; position: sticky; align-items: center;">
+                    <div class="start col-xxl-3 col-lg-3 col-md-3 col-sm-2">
+                        <div class="starticons d-flex justify-content-start align-items-center" >
+                            
+                            <button class="handburger btn bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="bi bi-list h3"></i>
+                            </button>
+
+                            <a class="YouTube" href="index.html"><i class="bi bi-youtube h3"></i><span class="yt">YouTube</span></a>
+                        </div>
+                    </div>
+                    
+                    <div class="searchoption">
+                        <span class="center col-xxl-6 col-lg-6 col-md-6 col-sm-8">
+                            <form class="d-flex d-none d-sm-flex" role="search">
+                                <input class="form-control container-fluid" type="text" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-haspopup="false" dir="ltr">
+                                <span><button class="form-search" type="submit"><i class="bi bi-search"></i></button></span>
+                                <button class="btn" type="search"><i class="bi bi-mic-fill"></i></button>
+                            </form>
+                        </span>
+                    </div>
+
+                    <div class="endicon justify-content-end">
+                        <span class="end col-xxl-3 col-lg-3 col-md-3 col-sm-2">
+                            <button class="create">
+                                <a><i class="bi bi-camera-video h4"></i></a>
+                            </button>
+                            <button class="notification">
+                                <a><i class="bi bi-bell h4"></i></a>
+                            </button>
+                            <button class="profile">
+                                <a><i class="bi bi-person-circle h3"></i></a>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-container">
+                <button class="scroll-arrow left-arrow" onclick="scrollToLeft()"><i class="bi bi-arrow-left"></i></button>
+                <div class="button-container" id="buttonContainer">
+                    <span><button class="suggestion-button">All</button></span>
+                    <span><button class="suggestion-button">Music</button></span>
+                    <span><button class="suggestion-button">Gaming</button></span>
+                    <span><button class="suggestion-button">Programming</button></span>
+                    <span><button class="suggestion-button">Live</button></span>
+                    <span><button class="suggestion-button">Movies</button></span>
+                    <span><button class="suggestion-button">Gardening</button></span>
+                    <span><button class="suggestion-button">Books</button></span>
+                    <span><button class="suggestion-button">Tech</button></span>
+                    <span><button class="suggestion-button">Travel</button></span>
+                    <span><button class="suggestion-button">News</button></span>
+                    <span><button class="suggestion-button">Shopping</button></span>
+                    <span><button class="suggestion-button">Self-confidence</button></span>
+                    <span><button class="suggestion-button">T-Series</button></span>
+                    <span><button class="suggestion-button">Recently uploaded</button></span>
+                    <span><button class="suggestion-button">Tourism</button></span>
+                    <span><button class="suggestion-button">Watched</button></span>
+                    <span><button class="suggestion-button">New to you</button></span>
+                </div>
+                <button class="scroll-arrow right-arrow" onclick="scrollToRight()"><i class="bi bi-arrow-right"></i></button>
+            </div>
+
+
+            <!--Head part-->
+            <header>
+                <div class="banner" id="premiumBanner">
+                    <div class="banner-content">
+                        <h3 class="bannerhead"><i class="bi bi-youtube h3 bannerlogo"></i> YouTube Premium</h3>
+                        <a class="bannertext">Hurry! Dive right into 2 months of Premium,</a><br>
+                        <a class="bannertext">free of charge. Terms apply. Cancel anytime.</a><br>
+                        <button class="cta-button">2 Month trial</button>
+                    </div>
+                    <button class="btn-close" aria-label="Close" onclick="closeBanner()"></button>
+                </div>
+            </header>
+
+            <!--vedio part-->
+            <section class="container-fluid p-5 py-5">
+                <div class="row">
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/5K3Jdux_DDg?si=ROK9vUtWmQC-MNQk" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail7.png" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp4.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Turkey 4K - Scenic Relaxation Film With Calming Music</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/3A_y68xNpWg?si=SHBb8koqWDo5PdNc" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail1.png" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp1.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>vanlife</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/OMUfmlPs_w4?si=ol91xRXHC2THAM8f" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail2.png" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp2.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Inside The World’s Most Secret House Built (House Tour)</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/3A_y68xNpWg?si=SHBb8koqWDo5PdNc" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail3.jpg" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp4.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>learning to enjoy time alone.</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/OMUfmlPs_w4?si=ol91xRXHC2THAM8f" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail5.jpg" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp3.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Turkey 4K - Scenic Relaxation Film With Calming Music</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/OMUfmlPs_w4?si=ol91xRXHC2THAM8f" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail6.png" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp2.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Turkey 4K - Scenic Relaxation Film With Calming Music</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/3A_y68xNpWg?si=SHBb8koqWDo5PdNc" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail8.jpg" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp1.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Turkey 4K - Scenic Relaxation Film With Calming Music</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="video-part col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                        <a href="https://youtu.be/OMUfmlPs_w4?si=ol91xRXHC2THAM8f" class="card border-0 bg-transparent mb-4">
+                            <img src="assets/thumbnail5.jpg" class="img-fluid" alt="">
+                            <div class="card-video-details d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="assets/video-dp4.jpg" width="40" alt="">
+                                </div>
+                                <div>
+                                    <h4>Turkey 4K - Scenic Relaxation Film With Calming Music</h4>
+                                    <div>Scenic Relaxation <br>7.9M views &middot; 2 weeks ago</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--menu-->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <a class="handburger btn bg-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close" >
+                        <i class="bi bi-list h3"></i>
+                    </a>
+                    <a class="YouTube" href="index.html"><i class="bi bi-youtube h3 "></i><span class="yt">YouTube</span></a>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="nav-menu-items">
+                        <div class="nav-section">
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-house-door-fill"></i>Home</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-fire"></i>Shorts</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-collection-play"></i>Subscription</a></li>
+                        </div>
+                        <hr/>
+                    
+                        <div class="nav-section">
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-video"></i>Your channel</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-clock-history"></i>History</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-music-note-list"></i>Playlists</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-play-btn"></i>Your videos</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-clock"></i>Watch later</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-hand-thumbs-up"></i>Liked videos</a></li>
+                        </div>
+                        <hr/>
+                    
+                        <div class="nav-section">
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>IShowSpeed</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>Average Rob</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>Leana Deeb</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>Brocode</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>D i n L i f e</a></li>
+                            <li class="nav-text"><a href="#"><i class="nav-icon bi bi-person-circle"></i>Gwax Art</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            
+        
+    </main>
+
+
+
+
+
+    
+    <!--bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--main javascript-->
+    <script src="js/script.js"></script>
+</body>
+</html>
